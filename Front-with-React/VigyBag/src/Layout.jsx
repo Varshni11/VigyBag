@@ -5,12 +5,12 @@ import { Outlet } from "react-router-dom";
 
 function Layout() {
   return (
-    <>
+    <div className="h-full box-border bg-cream">
     <Navbar/>
     <Outlet/>
     <Footer/>
     
-    </>
+    </div >
   )
 }
 

@@ -50,7 +50,9 @@ const Navbar = () => {
 
       {/* User Actions */}
       <div className="flex gap-2 items-center">
+      <NavLink to="/cart">
         <FaShoppingCart className="mx-2 text-black cursor-pointer size-10" />
+        </NavLink>
         <FaBell className="mx-2 text-black cursor-pointer size-10" />
         <Link to="/dashboard">
             <div className='flex'>
