@@ -3,6 +3,8 @@ import "./Cart.css"
 import "./Item/Item";
 import Item from "./Item/Item";
 import ItemSummary from "./ItemSummary/ItemSummary";
+import { Link } from "react-router-dom";
+import ShippingAddress from "./ShippingAddress";
 
 export default function Cart(){
     return (<div className="grid lg:grid-cols-3 grid-cols-1 gap-12 mx-10 mt-10 h-11/12">
@@ -23,7 +25,7 @@ export default function Cart(){
                <ItemSummary name="item4" quantity="2" price="400"/>
             </ul>
             <h3 className="mt-2 text-xl font-bold flex flex-row justify-between pl-5">Total: <span>₹1000</span></h3>
-            <button className="btn mt-5 btn-success self-center text-white">Proceed to payment</button>
+            <Link to="/shippingAddress" className="self-center"><button className="btn mt-5 btn-success text-white">Check - out</button></Link>
         </div>
     </section>
     
